@@ -29,6 +29,12 @@ This project uses Jest for unit testing. To run the tests, execute the following
 ```bash
 npm run test
 ```
+## How to Generate Documentation
+
+To generate documentation for the application, run the following command:
+```bash
+npm run docs
+```
 
 ## Project Folder Structure
 
