@@ -1,6 +1,7 @@
 import { Container, Paper } from '@mui/material'
 
 import SeasonPage from '@pages/season'
+import RacePage from '@pages/race'
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 const App = () => {
@@ -10,6 +11,9 @@ const App = () => {
         <Router>
           <Routes>
             <Route path='/' element={<SeasonPage />} />
+            <Route path='/season/:seasonId'>
+              <Route index element={<RacePage />} />
+            </Route>
           </Routes>
         </Router>
       </Paper>
