@@ -17,3 +17,17 @@ export const timeToMinutes = time => {
     return parseInt(hours) * 60 + parseInt(minutes) + parseInt(seconds) / 60
   }
 }
+export const mapRaceDetailsToChartData = raceDetails => {
+  const firstRacerTime = timeToMinutes(raceDetails.Results[0]?.Time?.time)
+  const raceData = raceDetails.Results.map((race, index) => {
+    if (!race.Time) {
+      return { name: race.Driver.givenName, time: null }
+    }
+    const racerTimeInMinutes =
+      index === 0
+        ? firstRacerTime
+        : firstRacerTime + timeToMinutes(race.Time.time)
+    return { name: race.Driver.givenName, time: racerTimeInMinutes }
+  })
+  return raceData
+}
