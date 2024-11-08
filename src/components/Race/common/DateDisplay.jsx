@@ -3,6 +3,12 @@ import { Typography, Box } from '@mui/material'
 import { format, parse } from 'date-fns'
 import PropTypes from 'prop-types'
 
+/**
+ * DateDisplay is a component that renders a date with an icon.
+ *
+ * @prop {string} date - The date string in 'yyyy-MM-dd' format to be displayed.
+ * @returns {JSX.Element} A Box component containing the formatted date and an icon.
+ */
 const DateDisplay = ({ date }) => {
   return (
     <Box display={'flex'} alignItems={'center'}>

@@ -10,6 +10,25 @@ import {
   SET_ERROR_SEASON,
 } from './types.js'
 
+
+/**
+ * SeasonState is a React component that provides context-based state management
+ * for season-related data. It uses the `useReducer` hook to manage the state of
+ * season data, including the list of seasons, loading status, error status, and
+ * pagination information.
+ *
+ * The component fetches season data from an external API and updates the state
+ * based on the received data. It also provides context values for accessing
+ * the state and dispatching actions to update the state.
+ *
+ * @param {Object} props - The component props.
+ * @param {React.ReactNode} props.children - The child components that will be
+ * rendered within the SeasonState provider.
+ * 
+ * @returns {React.ReactElement} A React element that provides the season context
+ * to its children.
+ */
+
 const SeasonState = props => {
   const initialState = {
     seasonsList: [],

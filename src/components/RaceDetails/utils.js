@@ -1,3 +1,8 @@
+/**
+ * Converts a string time to minutes.
+ * @param {string} time - a string in either "hours:minutes:seconds", "minutes:seconds", or "+seconds.milliseconds" format.
+ * @returns {number} the time in minutes.
+ */
 export const timeToMinutes = time => {
   if (!time) return 0
 
@@ -17,6 +22,13 @@ export const timeToMinutes = time => {
     return parseInt(hours) * 60 + parseInt(minutes) + parseInt(seconds) / 60
   }
 }
+
+
+/**
+ * Maps race details to chart data for a line chart.
+ * @param {Object} raceDetails - race details object from the Ergast API.
+ * @returns {Object[]} an array of objects, each with a name and time property.
+ */
 export const mapRaceDetailsToChartData = raceDetails => {
   const firstRacerTime = timeToMinutes(raceDetails.Results[0]?.Time?.time)
   const raceData = raceDetails.Results.map((race, index) => {

@@ -2,6 +2,20 @@ import AttributeDisplay from '@components/common/ItemDisplay/AttributeDisplay'
 import raceDetailsContext from '@context/RaceDetails/context'
 import { Box, Card, CardContent, Typography } from '@mui/material'
 import { useContext } from 'react'
+
+
+/**
+ * RaceDetailsList is a React component that displays a list of race details.
+ * It fetches race details and filtered details from the raceDetailsContext.
+ * If a search key is present, it displays the filtered details; otherwise,
+ * it displays the complete race details. If no results are found for the
+ * searched key, it displays a message indicating that no results were found.
+ * 
+ * The race details are displayed as a list of cards, each showing the driver's 
+ * name, nationality, team, and position in the race.
+ * 
+ * @returns {JSX.Element} The component rendering a list of race details or a "No results found" message.
+ */
 const RaceDetailsList = () => {
   const { raceDetails, filteredDetails, searchedKey } =
     useContext(raceDetailsContext)

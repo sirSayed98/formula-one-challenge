@@ -5,6 +5,18 @@ import ActionDisplay from '@components/common/ItemDisplay/ActionDisplay'
 import AttributeDisplay from '@components/common/ItemDisplay/AttributeDisplay'
 import useRedirection from '@components/common/utils'
 
+/**
+ * A React component that displays a single season as a card.
+ *
+ * This component renders a single season as a card with the season number,
+ * and a link to the season details page. It also displays a "Details" button
+ * that can be used to navigate to the season details page.
+ *
+ * @param {Object} season - The season object to be rendered as a card.
+ * @param {string} season.season - The number of the season.
+ * @param {string} season.url - The URL of the season details page.
+ * @returns {React.ReactElement} A React element representing a single season as a card.
+ */
 const SeasonCardItem = ({ season }) => {
   const handleRedirction = useRedirection(`/season/${season.season}`)
   return (
