@@ -1,11 +1,11 @@
-import ActionDisplay from '@components/common/ItemDetails/ActionDisplay'
-import AttributeDisplay from '@components/common/ItemDetails/AttributeDisplay'
+import ActionDisplay from '@components/common/ItemDisplay/ActionDisplay'
+import AttributeDisplay from '@components/common/ItemDisplay/AttributeDisplay'
 import useRedirection from '@components/common/utils'
 import {
-  Box,
-  Card,
-  CardContent,
-  ListItem
+    Box,
+    Card,
+    CardContent,
+    ListItem
 } from '@mui/material'
 import PropTypes from 'prop-types'
 

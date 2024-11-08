@@ -1,8 +1,8 @@
 import { Card, CardActions, CardContent } from '@mui/material'
 import PropTypes from 'prop-types'
 
-import ActionDisplay from '@components/common/ItemDetails/ActionDisplay'
-import AttributeDisplay from '@components/common/ItemDetails/AttributeDisplay'
+import ActionDisplay from '@components/common/ItemDisplay/ActionDisplay'
+import AttributeDisplay from '@components/common/ItemDisplay/AttributeDisplay'
 import useRedirection from '@components/common/utils'
 
 const SeasonCardItem = ({ season }) => {
