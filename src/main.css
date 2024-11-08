@@ -1,0 +1,27 @@
+body{
+  background-color: #fafbfb;
+}
+
+/* Customize the entire scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+  height: 6px; /* Set the height for horizontal scrollbar */
+}
+
+/* Customize the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 10px;  /* Rounded corners for the track */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+  transition: background-color 0.3s;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
