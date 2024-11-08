@@ -1,4 +1,4 @@
-import AttributeDisplay from '@components/common/ItemDetails/AttributeDisplay'
+import AttributeDisplay from '@components/common/ItemDisplay/AttributeDisplay'
 import raceDetailsContext from '@context/RaceDetails/context'
 import { Box, Card, CardContent, Typography } from '@mui/material'
 import { useContext } from 'react'
