@@ -3,7 +3,7 @@ import { Container, Paper } from '@mui/material'
 import SeasonPage from '@pages/season'
 import RacePage from '@pages/race'
 import RaceDetailsPage from '@pages/race-details'
-
+import NotFoundPage from '@pages/not-found'
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
               <Route index element={<RacePage />} />
               <Route path=':roundNumber' element={<RaceDetailsPage />} />
             </Route>
+            <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </Router>
       </Paper>
