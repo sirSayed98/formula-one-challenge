@@ -2,6 +2,11 @@ import raceContext from '@context/Race/context'
 import PushPinIcon from '@mui/icons-material/PushPin'
 import PropTypes from 'prop-types'
 import { useContext } from 'react'
+/**
+ * A pin icon that can be clicked to pin/unpin a race
+ * @param {object} race the race to pin/unpin
+ * @returns {ReactElement} a clickable PushPinIcon
+ */
 const PushPin = ({ race }) => {
   const { handleRacePin } = useContext(raceContext)
   return (

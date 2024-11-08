@@ -8,6 +8,17 @@ import { Box, Typography } from '@mui/material'
 import Error from '@components/common/Error'
 import CardView from './card/Container'
 import ListView from './list/Container'
+
+/**
+ * The SeasonWrapper component displays a view for displaying a list of seasons.
+ * It fetches and manages season data using a context-based state management approach.
+ *
+ * The component allows toggling between card and list views, changing the number of items
+ * displayed per page, and paginating through the list of seasons. It shows a loading indicator
+ * while data is being fetched and displays an error message if fetching fails.
+ *
+ * @returns {JSX.Element} A React element that renders the season list and control elements.
+ */
 const SeasonWrapper = () => {
   const {
     fetchSeasons,

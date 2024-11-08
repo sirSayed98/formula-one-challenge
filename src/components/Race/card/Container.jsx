@@ -1,7 +1,14 @@
 import { Grid } from '@mui/material'
+import PropTypes from 'prop-types'
 import SeasonItem from './Item'
 
-import PropTypes from 'prop-types'
+/**
+ * This functional component is used to render a grid of race cards.
+ * It takes one prop, data, which is an array of race objects.
+ * It maps over the array and renders each race as a SeasonItem component.
+ * @param {object} data - an array of race objects.
+ * @returns {jsx} a grid of race cards.
+ */
 const RaceCardContainer = ({ data }) => {
   return (
     <>

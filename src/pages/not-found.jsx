@@ -3,6 +3,19 @@ import { Box, Button, Container, Typography } from '@mui/material';
 
 import { useNavigate } from 'react-router-dom';
 
+/**
+ * A functional component that renders a 404 Not Found page.
+ * 
+ * The component shows an appropriate icon, a heading, and a message explaining
+ * that the page was not found. It also provides two buttons: one for going
+ * back to the previous page and one for going to the home page.
+ * 
+ * The component uses the {@link https://reactrouter.com/docs/en/v6/hooks/use-navigate|useNavigate} hook from React Router
+ * to get the {@link https://reactrouter.com/docs/en/v6/apis/use-navigate#usenavigate|navigate} function, which is used to
+ * handle the button clicks.
+ * 
+ * @returns {JSX.Element} A JSX element representing the 404 Not Found page.
+ */
 const NotFoundPage = () => {
   const navigate = useNavigate();
 

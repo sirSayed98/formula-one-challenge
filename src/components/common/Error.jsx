@@ -1,6 +1,12 @@
 import ErrorIcon from '@mui/icons-material/Error'
 import { Box, Button, Typography } from '@mui/material'
 import PropTypes from 'prop-types'
+/**
+ * A functional component that displays an error message
+ * @function
+ * @param {function} handleReload - function to call when reload button is clicked
+ * @returns {ReactElement} a JSX element representing the error page
+ */
 const Error = ({ handleReload }) => {
   return (
     <Box

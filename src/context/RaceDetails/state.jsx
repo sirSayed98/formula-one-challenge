@@ -11,6 +11,25 @@ import {
   SET_FILTERED_LIST,
   SET_LOADING_RACE_DETAILS,
 } from './types'
+
+/**
+ * This component provides context-based state management for race details. It
+ * fetches race details from an external API and updates the state based on the
+ * received data. It also provides context values for accessing the state and
+ * dispatching actions to update the state.
+ *
+ * The component fetches race details when the component mounts and when the
+ * user selects a different race. It dispatches actions to update the state
+ * when the race details are loaded.
+ *
+ * @param {Object} props - The component props.
+ * @param {React.ReactNode} props.children - The child components that will be
+ * rendered within the RaceDetailsState provider.
+ *
+ * @returns {React.ReactElement} A React element that provides the race details
+ * context to its children.
+ */
+
 const RaceState = props => {
   const initialState = {
     raceDetails: {},

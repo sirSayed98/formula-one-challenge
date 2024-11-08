@@ -9,6 +9,17 @@ import ListView from './list/Container'
 import ControlBar from '@components/common/ControlBar/ControlBar'
 import LoadingProgress from '@components/common/Loading'
 import Error from '@components/common/Error'
+
+/**
+ * RaceWrapper is a React component that provides a view for displaying a list of races.
+ * It fetches and manages race data using a context-based state management approach.
+ *
+ * The component allows toggling between card and list views, changing the number of items
+ * displayed per page, and paginating through the list of races. It shows a loading indicator
+ * while data is being fetched and displays an error message if fetching fails.
+ *
+ * @returns {JSX.Element} A React element that renders the race list and control elements.
+ */
 const RaceWrapper = () => {
   const {
     fetchRaces,
