@@ -21,7 +21,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 const App = () => {
   return (
     <Container padding={1}>
-      <Paper sx={{ paddingX: '16px',overflowY:'hidden' }} elevation={3}>
+      <Paper sx={{ padding: '16px',overflowY:'hidden' }} elevation={3}>
         <Router>
           <Routes>
             <Route path='/' element={<SeasonPage />} />
