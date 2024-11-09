@@ -9,7 +9,6 @@ import PerformanceChart from './PerformanceChart'
 import RaceDetailsList from './RaceDetailsList'
 import Search from './Search'
 
-
 /**
  * A React component that displays the details of a race.
  *
@@ -52,7 +51,7 @@ const RaceDetailsWrapper = () => {
         height: '95vh',
       }}
     >
-      <Box sx={{ height: '10%', paddingTop: '2rem' }}>
+      <Box sx={{ paddingTop: '2rem' }}>
         <Typography align='center' variant='h3' component='h3'>
           Race Details
         </Typography>
@@ -60,12 +59,13 @@ const RaceDetailsWrapper = () => {
       {isLoading ? (
         <LoadingProgress />
       ) : (
-        <Box padding={'8px'}>
+        <Box sx={{ height: '100%' }} padding={'8px'}>
           <Grid container spacing={2} marginBottom={'32px'}>
             <Grid
               display={'flex'}
               flexDirection={'column'}
               justifyContent={'center'}
+              alignItems={'center'}
               item
               xs={12}
               md={4}
@@ -79,7 +79,7 @@ const RaceDetailsWrapper = () => {
               <PerformanceChart />
             </Grid>
           </Grid>
-          <Box sx={{ height: '40vh', overflowY: 'scroll' }}>
+          <Box sx={{ maxHeight: '50vh', overflowY: 'scroll' }}>
             <RaceDetailsList />
           </Box>
         </Box>
