@@ -60,7 +60,7 @@ const RaceWrapper = () => {
         height: '95vh',
       }}
     >
-      <Box sx={{ height: '10%', paddingTop: '2rem' }}>
+      <Box sx={{ paddingY: '1rem' }}>
         <Typography align='center' variant='h3' component='h3'>
           Races
         </Typography>
@@ -69,13 +69,13 @@ const RaceWrapper = () => {
         <LoadingProgress />
       ) : (
         <>
-          <Box sx={{ height: '75%', overflowY: 'scroll' }}>
+          <Box sx={{ overflowY: 'auto', height:'80%' }}>
             <CardListView isCardView={isCardView}>
               <ListView data={racesList} />
               <CardView data={racesList} />
             </CardListView>
           </Box>
-          <Box sx={{ height: '5%' }}>
+          <Box>
             <ControlBar
               emitPageSize={changePageSize}
               emitPaginationPage={changePaginationPage}

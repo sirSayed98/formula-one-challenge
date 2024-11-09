@@ -29,7 +29,7 @@ const RaceCardItem = ({ race }) => {
     <Card
       onClick={handleRedirction}
       sx={{
-        height: '300px',
+        height: '330px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -42,6 +42,7 @@ const RaceCardItem = ({ race }) => {
           marginBottom={'16px'}
           display={'flex'}
           justifyContent={'space-between'}
+          alignItems={'center'}
         >
           <Box>
             <AttributeDisplay value={race.raceName} attribute='Race' />

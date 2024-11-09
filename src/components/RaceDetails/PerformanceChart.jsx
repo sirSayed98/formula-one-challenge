@@ -87,7 +87,8 @@ const PerformanceChart = () => {
     <Box
       display={'flex'}
       flexDirection={'row-reverse'}
-      sx={{ height: '300px', width: '100%' }}
+      justifyContent={'center'}
+      sx={{ maxHeight: '300px', width: '100%' }}
     >
       <Line data={data} options={options} />
     </Box>

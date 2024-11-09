@@ -27,7 +27,7 @@ const ControlBar = ({
   offset,
 }) => {
   return (
-    <Box display='flex' alignItems='center' gap={2} my={2}>
+    <Box display='flex' alignItems='center'>
       <CardListSwitcher isCardView={isCardView} onToggle={emitCardViewToggle} />
       <PageSizeDropdown pageSize={pageSize} onPageSizeChange={emitPageSize} />
       <Pagination
