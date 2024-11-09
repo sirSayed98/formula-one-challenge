@@ -1,5 +1,19 @@
 # Formula One Challenge
 
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [How to Run the Application](#how-to-run-the-application)
+3. [How to Run Unit Tests](#how-to-run-unit-tests)
+4. [How to Generate Documentation](#how-to-generate-documentation)
+5. [Technical Approach and Architectural Decisions](#technical-approach-and-architectural-decisions)
+   - [1. Tech Stack](#1-tech-stack)
+   - [2. Folder Structure](#2-folder-structure)
+   - [3. State Management & Data Flow](#3-state-management--data-flow)
+   - [4. UI/UX Design](#4-uiux-design)
+   - [5. Scalability and Maintainability](#5-scalability-and-maintainability)
+
+
 ## Project Overview
 
 This project is a web application designed to provide detailed information about Formula One races, seasons, and race details. The application is built using React and utilizes various libraries for routing, and chart rendering.
